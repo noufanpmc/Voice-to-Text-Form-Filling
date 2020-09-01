@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title Page-->
+    <title></title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/display.css" rel="stylesheet" media="all">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+
+    <link href="css/split.css" rel="stylesheet" media="all">
+
+</head>
+
+<body>
+
+
+    <div class="split left">
+        <div id="nodes">
+          <!-- <li class="myList active">Question 1</a></li> -->
+        </div>
+    </div>
+
+    <div class="split right">
+        <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+            <div class="wrapper wrapper--w680">
+                <div class="card card-4">
+                    <div class="card-body">
+                        <div id="details" method="POST">
+                          <div class="slidewrapper">
+                          </div>
+                        </div>
+
+                        <div id="start-btn" onclick="start()" class="btn btn--radius-2 btn--blue">Start</div>
+
+                        <div class="jump-btns">
+                            <div id="back-btn" onclick="" class="btn btn--radius-2 btn--blue" style="display:none">Back</div>
+                            <div id="next-btn" onclick="" class="btn btn--radius-2 btn--blue" style="display:none">Next</div>
+                        </div>
+
+                        <div class="dropdown">
+                              <button onclick="myFunction()" class="dropbtn">MENU</button>
+                              <div id="myDropdown" class="dropdown-content">
+                                <a href="ask.html?form=1">Proposed Insured Details </a>
+                                <a href="#">Proposed Holder Details</a>
+                                <a href="#">Nominee Details </a>
+                                <a href="#">Policy Details</a>
+                                <a href="#">Medical & Family Details</a>
+                                <a href="#">LifeStyle & Personal Details</a>
+                                <a href="#">Product Details</a>
+                                <a href="#">Additional Details</a>
+                                <a href="#">Tax Status Questionnaire</a>
+                              </div>
+                            </div>
+
+                            <script>
+                            /* When the user clicks on the button,
+                            toggle between hiding and showing the dropdown content */
+                            function myFunction() {
+                              document.getElementById("myDropdown").classList.toggle("show");
+                            }
+
+                            // Close the dropdown if the user clicks outside of it
+                            window.onclick = function(event) {
+                              if (!event.target.matches('.dropbtn')) {
+                                var dropdowns = document.getElementsByClassName("dropdown-content");
+                                var i;
+                                for (i = 0; i < dropdowns.length; i++) {
+                                  var openDropdown = dropdowns[i];
+                                  if (openDropdown.classList.contains('show')) {
+                                    openDropdown.classList.remove('show');
+                                  }
+                                }
+                              }
+                            }
+                            </script>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+    <!-- forms -->
+    <script src="form/form.js"></script>
+
+    <!-- form validations -->
+    <script src="vendor/fuzzyset/fuzzyset.js"></script>
+    <script src="vendor/fuzzysort-master/fuzzysort.js"></script>
+    <script src="vendor/numeral/numeral.js"></script>
+    <script src="js/validation.js"></script>
+
+    <!-- get  -->
+    <script src="js/get.js"></script>
+
+    <!-- text2speech -->
+    <script src='vendor/responsive-voice/responsivevoice.js'></script>
+
+     <!-- dropdown -->
+    <script src="js/fuzzy.js"></script>
+
+
+    <!-- speech2text -->
+    <script src="js/speech2textv2.js"></script>
+
+    <!-- function for questions -->
+    <script src="js/que.js"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->
